@@ -17,7 +17,7 @@ Additional requirements:
 ●	There are no restrictions on use of external libraries!
 
 
-
+![weatherScreen](https://user-images.githubusercontent.com/65896669/174109309-df62dd6f-c80a-45a6-848f-28107dc4c4bd.jpg)
 
 ![12](https://user-images.githubusercontent.com/65896669/173962433-6af30c51-dde1-4e28-b0be-6cbab1c1cd15.jpg)
 
