@@ -2,10 +2,10 @@ package com.example.weatherapp
 
 import android.Manifest
 import android.content.pm.PackageManager
-import android.location.Address
 import android.location.Geocoder
 import android.os.Bundle
 import android.view.View
+import android.widget.SearchView
 import android.widget.Toast
 import androidx.core.app.ActivityCompat
 import androidx.fragment.app.Fragment
@@ -14,10 +14,8 @@ import androidx.lifecycle.lifecycleScope
 import com.example.weatherapp.databinding.FragmentStartBinding
 import com.example.weatherapp.viewmodels.CurrentWeatherViewModel
 import com.google.android.gms.location.FusedLocationProviderClient
-import com.google.android.gms.location.LocationRequest
 import com.google.android.gms.location.LocationServices
 import com.google.android.gms.location.Priority
-import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.tasks.CancellationToken
 import com.google.android.gms.tasks.CancellationTokenSource
 import com.google.android.gms.tasks.OnTokenCanceledListener
@@ -27,7 +25,8 @@ import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.tasks.await
 import timber.log.Timber
-import java.io.IOException
+import java.lang.Exception
+import java.util.*
 
 @AndroidEntryPoint
 class StartFragment : Fragment(R.layout.fragment_start) {
@@ -61,7 +60,9 @@ class StartFragment : Fragment(R.layout.fragment_start) {
                             override fun isCancellationRequested() = false
                         }
                     ).await()
-                        searchLocation()
+
+                    getLocationData()
+//                    setViewDataWithLocationParameters(currentLocation) //todo create this method
 
                     //todo setup the view with the API date here
 
@@ -70,6 +71,33 @@ class StartFragment : Fragment(R.layout.fragment_start) {
                 }
             }
         }
+    }
+
+    private fun getLocationData() {
+        binding.searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener{
+            override fun onQueryTextSubmit(query: String?): Boolean {
+                val location: String = binding.searchView.query.toString()
+                val geocoder = Geocoder(requireContext(), Locale.getDefault())
+
+                if (location == "") {
+                    Toast.makeText(requireContext(), "provide location", Toast.LENGTH_SHORT).show()
+                } else {
+                    try {
+                        val addresses = geocoder.getFromLocationName(location, 2)
+                        val address = addresses[0]
+                        Timber.tag("loccation").e("Location: latitude ${address.latitude} ${address.longitude} ${address.locality}")
+                    } catch (ex: Exception) {
+                        Toast.makeText(requireContext(), "Enter a valid location name", Toast.LENGTH_SHORT).show()
+                    }
+                }
+                return false
+            }
+
+            override fun onQueryTextChange(newText: String?): Boolean {
+                return false
+            }
+
+        })
     }
 
     private fun requestPermission() {
@@ -105,28 +133,5 @@ class StartFragment : Fragment(R.layout.fragment_start) {
     }
 
     //todo to be in viewModel
-
-    private fun searchLocation(){
-
-        Timber.tag("loccation").e(binding.searchView.query.toString())
-        val location: String = binding.searchView.query.toString().trim()
-        var addressList: List<Address>? = null
-
-        if (location == ""){
-            Toast.makeText(requireContext(), "provide location", Toast.LENGTH_SHORT).show()
-        }else{
-            val geoCoder = Geocoder(requireContext())
-            try {
-                addressList = geoCoder.getFromLocationName(location, 1)
-            }catch (e: IOException){
-                e.printStackTrace()
-            }
-
-            val address = addressList!![0]
-            val latLng = LatLng(address.latitude, address.longitude)
-            Timber.tag("loccation").e(address.toString())
-        }
-    }
-
 
 }

@@ -9,9 +9,7 @@ constructor(
     private val currentWeatherRetrofit: CurrentWeatherRetrofit,
 ) {
     suspend fun getPlaces(
-        latitude: String, longitude: String, key: String
+        units: String, latitude: String, longitude: String, key: String
     ): Response<CurrentWeatherApiResponse> =
-        currentWeatherRetrofit.getCurrentWeather(
-            latitude, longitude, key
-        )
+        currentWeatherRetrofit.getCurrentWeather(units, latitude, longitude, key)
 }

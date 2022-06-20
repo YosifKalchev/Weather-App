@@ -49,7 +49,7 @@ class CurrentWeatherViewModel @Inject constructor(
         location: Location
     ): Response<CurrentWeatherApiResponse> {
 
-        return currentWeatherRepo.getPlaces(
+        return currentWeatherRepo.getPlaces("metric",
             "latitude", "longitude",
             BuildConfig.WEATHER_API_KEY
         )

@@ -9,6 +9,7 @@ interface CurrentWeatherRetrofit {
 
     @GET("data/2.5/weather")
     suspend fun getCurrentWeather(
+        @Query("units") units: String,
         @Query("lat") latitude: String,
         @Query("lon") longitude: String,
         @Query("appid") key: String
