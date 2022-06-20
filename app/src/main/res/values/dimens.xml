@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding_small">8dp</dimen>
+
+    <dimen name="extra_small_text_size">12sp</dimen>
+    <dimen name="small_text_size">14sp</dimen>
+    <dimen name="medium_text_size">18sp</dimen>
+    <dimen name="big_text_size">24sp</dimen>
+    <dimen name="large_text_size">32sp</dimen>
+    <dimen name="xl_text_size">90sp</dimen>
+
+    <dimen name="small_image_size">25dp</dimen>
+
+    <dimen name="linear_sum">3</dimen>
+    <dimen name="small_space_high">5dp</dimen>
+    <dimen name="medium_space_high">10dp</dimen>
+    <dimen name="small_corner_radius">20dp</dimen>
+
+</resources>

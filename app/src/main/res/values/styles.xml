@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="bigText" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/medium_text_size</item>
+    </style>
+
+    <style name="smallText" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/small_text_size</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="itemType" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textColor">@color/base_text</item>
+        <item name="android:textSize">@dimen/extra_small_text_size</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="itemSubType" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textColor">@color/base_text</item>
+        <item name="android:textSize">@dimen/small_text_size</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="linearLayout" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:weightSum">@dimen/linear_sum</item>
+    </style>
+
+    <style name="smallLinearLayout" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:background">@drawable/shape</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">@dimen/padding_small</item>
+    </style>
+
+    <style name="image" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:layout_width">@dimen/small_image_size</item>
+        <item name="android:layout_height">@dimen/small_image_size</item>
+        <item name="tint">@color/white</item>
+    </style>
+
+    <style name="smallSpace" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/small_space_high</item>
+    </style>
+
+    <style name="mediumSpace" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:layout_width">@dimen/medium_space_high</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="SearchViewStyle" parent="Widget.AppCompat.SearchView">
+        <item name="android:layout_gravity">end</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="queryHint">@string/search_hint</item>
+        <item name="android:tint">@color/white</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorSecondary">@color/white</item>
+        <item name="android:searchIcon">@drawable/ic_search_white</item>
+    </style>
+
+
+
+</resources>

@@ -74,9 +74,9 @@ class StartFragment : Fragment(R.layout.fragment_start) {
     }
 
     private fun getLocationData() {
-        binding.searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener{
+        binding.sbSearch.setOnQueryTextListener(object : SearchView.OnQueryTextListener{
             override fun onQueryTextSubmit(query: String?): Boolean {
-                val location: String = binding.searchView.query.toString()
+                val location: String = binding.sbSearch.query.toString()
                 val geocoder = Geocoder(requireContext(), Locale.getDefault())
 
                 if (location == "") {
