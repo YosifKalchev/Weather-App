@@ -50,7 +50,7 @@ class CurrentWeatherViewModel @Inject constructor(
     ): Response<CurrentWeatherApiResponse> {
 
         return currentWeatherRepo.getPlaces(
-            "latutude", "longitude",
+            "latitude", "longitude",
             BuildConfig.WEATHER_API_KEY
         )
     }

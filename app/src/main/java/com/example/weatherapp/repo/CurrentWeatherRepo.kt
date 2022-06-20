@@ -14,5 +14,4 @@ constructor(
         currentWeatherRetrofit.getCurrentWeather(
             latitude, longitude, key
         )
-
 }

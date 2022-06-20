@@ -1,62 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9933">
 
-
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:custom="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@android:drawable/screen_background_dark_transparent"
-        android:minHeight="100dp"
-        android:padding="16dp">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/tvCityName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:gravity="left|center"
-            android:textColor="@android:color/white"
-            android:textSize="20sp"
-            tools:text="Dublin"/>
+    <TextView
+        android:id="@+id/txtLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/txtSample"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchView" />
 
-        <TextView
-            android:hint="something"
-            android:id="@+id/ivWeatherIcon"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_below="@+id/tvCityName"
-            custom:weatherIconColor="@android:color/white"
-            custom:weatherIconSize="48"/>
 
-        <TextView
-            android:id="@+id/tvWeatherInfo"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/ivWeatherIcon"
-            android:layout_alignTop="@+id/ivWeatherIcon"
-            android:layout_marginLeft="16dp"
-            android:layout_marginStart="16dp"
-            android:layout_toEndOf="@+id/ivWeatherIcon"
-            android:layout_toRightOf="@+id/ivWeatherIcon"
-            android:gravity="left|center"
-            android:textColor="@android:color/white"
-            android:textSize="16sp"
-            tools:text="Partly Cloudy"/>
+    <TextView
+        android:id="@+id/txtSample"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="H E E E E E Y"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
-        <TextView
-            android:id="@+id/tvTemperature"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/ivWeatherIcon"
-            android:layout_marginTop="16dp"
-            android:gravity="left|center"
-            android:textColor="@android:color/white"
-            android:textSize="60sp"
-            android:textStyle="normal"
-            tools:text="35"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
 
-    </RelativeLayout>
+
