@@ -8,7 +8,7 @@ class CurrentWeatherRepo
 constructor(
     private val currentWeatherRetrofit: CurrentWeatherRetrofit,
 ) {
-    suspend fun getPlaces(
+    suspend fun getCurrentWeather(
         units: String, latitude: String, longitude: String, key: String
     ): Response<CurrentWeatherApiResponse> =
         currentWeatherRetrofit.getCurrentWeather(units, latitude, longitude, key)

@@ -1,3 +1,5 @@
+import org.jetbrains.kotlin.config.KotlinCompilerVersion
+
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
@@ -75,25 +77,25 @@ dependencies {
     implementation "com.squareup.retrofit2:retrofit:$retrofit"
     implementation "com.squareup.retrofit2:converter-gson:$retrofit"
 
+    // OKHttp3
     def okhttp3 = "4.9.3"
     implementation "com.squareup.okhttp3:okhttp:$okhttp3"
     implementation "com.squareup.okhttp3:logging-interceptor:$okhttp3"
 
     // Kotlin coroutines
-    def coroutines = "1.6.1"
-    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutines"
-    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutines"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$KotlinCompilerVersion"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$KotlinCompilerVersion"
     implementation 'com.google.code.gson:gson:2.8.9'
 
     // Lifecycle
-    def lifecycle = "2.5.0-rc01"
+    def lifecycle = "2.5.0-rc02"
     implementation "androidx.lifecycle:lifecycle-extensions:2.2.0"
     implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle"
     implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.4.1"
 
     // ViewModel provider
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1"
-    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.5.0-rc01'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.5.0-rc02'
     implementation "android.arch.lifecycle:extensions:1.1.1"
 
     // Hilt
@@ -101,18 +103,13 @@ dependencies {
     implementation "com.google.dagger:hilt-android:$hilt"
     kapt "com.google.dagger:hilt-android-compiler:$hilt"
 
-    // Glide
-    implementation 'com.github.bumptech.glide:glide:4.12.0'
-
     // Room
     def room = "2.4.2"
     implementation "androidx.room:room-runtime:$room"
     implementation "androidx.room:room-ktx:$room"
     kapt "androidx.room:room-compiler:$room"
 
-    implementation 'com.squareup.okhttp3:okhttp:4.9.3'
-    implementation 'androidx.appcompat:appcompat:1.4.2'
-
+    // Curl
     implementation 'com.github.mrmike:ok2curl:0.8.0'
 
     // Timber
@@ -127,5 +124,8 @@ dependencies {
 
     // Permission check
     implementation 'com.markodevcic:peko:2.2.0'
+
+    // Kotlin reflect
+    implementation "org.jetbrains.kotlin:kotlin-reflect:1.6.21"
 
 }

@@ -21,15 +21,15 @@
             android:orientation="vertical">
 
             <SearchView
-                style="@style/SearchViewStyle"
                 android:id="@+id/sbSearch"
-                 />
+                style="@style/SearchViewStyle" />
 
             <TextView
                 android:id="@+id/tv_address"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="DHAKA, BD"
+                android:gravity="center"
+                android:text="SOFIA,BG"
                 android:textColor="@color/white"
                 android:textSize="@dimen/large_text_size" />
 
@@ -51,18 +51,37 @@
             <TextView
                 android:id="@+id/tv_status"
                 style="@style/smallText"
+                android:textSize="24sp"
                 android:layout_gravity="center"
-                android:text="Clear Sky" />
+                android:text="Clear sky" />
 
-            <TextView
-                android:id="@+id/tv_temp"
+            <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:fontFamily="sans-serif-thin"
-                android:text="29°C"
-                android:textColor="@color/white"
-                android:textSize="@dimen/xl_text_size" />
+                android:layout_height="wrap_content">
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_temp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="sans-serif-thin"
+                    android:text="29°C"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/xl_text_size" />
+
+                <ImageView
+                    android:id="@+id/img_logo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop" />
+
+            </LinearLayout>
+
 
             <LinearLayout
                 android:layout_width="match_parent"

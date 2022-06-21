@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">WeatherApp</string>
     <string name="search_hint">Enter location or city name</string>
+
+    <string name="WEATHER_API_URL">https://api.openweathermap.org/</string>
+    <string name="ICON_PREFIX">"https://openweathermap.org/img/wn/</string>
+    <string name="ICON_POSTFIX">.png</string>
 </resources>

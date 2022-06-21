@@ -11,4 +11,8 @@
     <color name="base_text">#493a52</color>
     <color name="smallLayoutBackground">#3CF1EBF1</color>
 
+    <color name="gradient_dark">#122259</color>
+    <color name="gradient_dark_transparent">#BF122259</color>
+    <color name="gradient_light">#6B94C5</color>
+
 </resources>
