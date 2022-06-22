@@ -37,7 +37,7 @@
             <TextView
                 android:id="@+id/tv_updated_at"
                 style="@style/smallText"
-                android:hint="20 April 2012, 20:08 PM"
+                android:hint="20 April 2022, 20:08 PM"
                 android:paddingTop="@dimen/padding_small" />
         </LinearLayout>
 
@@ -63,7 +63,7 @@
                 <TextView
                     android:id="@+id/tv_temp"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:fontFamily="sans-serif-thin"
                     android:hint="29°C"
@@ -89,7 +89,7 @@
                 <TextView
                     android:id="@+id/tv_temp_min"
                     style="@style/smallText"
-                    android:hint="Min Temp: 05:05 AM" />
+                    android:hint="Min Temp: 26°C" />
 
                 <Space
                     android:layout_width="50dp"
@@ -98,7 +98,7 @@
                 <TextView
                     android:id="@+id/tv_temp_max"
                     style="@style/smallText"
-                    android:hint="Max Temp: 05:05 PM" />
+                    android:hint="Max Temp: 31°C" />
             </LinearLayout>
 
         </LinearLayout>
@@ -172,7 +172,7 @@
                     <TextView
                         android:id="@+id/tv_wind_value"
                         style="@style/itemSubType"
-                        android:hint="06:40 AM" />
+                        android:hint="25 m/s" />
 
                 </LinearLayout>
             </LinearLayout>
@@ -199,7 +199,7 @@
                     <TextView
                         android:id="@+id/tv_pressure_value"
                         style="@style/itemSubType"
-                        android:hint="06:40 AM" />
+                        android:hint="100 hPa" />
                 </LinearLayout>
 
                 <Space style="@style/mediumSpace" />
@@ -220,7 +220,7 @@
                     <TextView
                         android:id="@+id/tv_humidity_value"
                         style="@style/itemSubType"
-                        android:hint="06:40 AM" />
+                        android:hint="80%" />
                 </LinearLayout>
 
                 <Space style="@style/mediumSpace" />
