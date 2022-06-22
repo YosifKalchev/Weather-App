@@ -1,6 +1,6 @@
 package com.example.weatherapp.di.module
 
-import com.example.weatherapp.common.Common
+import com.example.weatherapp.BuildConfig
 import com.example.weatherapp.retrofit.CurrentWeatherRetrofit
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
@@ -43,7 +43,7 @@ object RetrofitCurrentWeatherModule {
     @Provides
     fun provideRetrofit(gson: Gson): Retrofit.Builder {
         return Retrofit.Builder()
-            .baseUrl(Common.CURRENT_WEATHER_API_URL)
+            .baseUrl(BuildConfig.CURRENT_WEATHER_BASE_URL) //"https://api.openweathermap.org/"
             .addConverterFactory(GsonConverterFactory.create(gson))
             .client(okHttp.build())
     }

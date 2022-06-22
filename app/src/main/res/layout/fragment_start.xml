@@ -22,22 +22,23 @@
 
             <SearchView
                 android:id="@+id/sbSearch"
-                style="@style/SearchViewStyle" />
+                style="@style/ThemeOverlay.SearchView" />
 
             <TextView
                 android:id="@+id/tv_address"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="SOFIA,BG"
+                android:hint="Sofia, BG"
                 android:textColor="@color/white"
+                android:textColorHint="@color/white"
                 android:textSize="@dimen/large_text_size" />
 
             <TextView
                 android:id="@+id/tv_updated_at"
                 style="@style/smallText"
-                android:paddingTop="@dimen/padding_small"
-                android:text="20 April 2012, 20:08 PM" />
+                android:hint="20 April 2012, 20:08 PM"
+                android:paddingTop="@dimen/padding_small" />
         </LinearLayout>
 
 
@@ -51,14 +52,9 @@
             <TextView
                 android:id="@+id/tv_status"
                 style="@style/smallText"
-                android:textSize="24sp"
                 android:layout_gravity="center"
-                android:text="Clear sky" />
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-            </LinearLayout>
+                android:hint="Clear sky"
+                android:textSize="24sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -70,8 +66,9 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:fontFamily="sans-serif-thin"
-                    android:text="29°C"
+                    android:hint="29°C"
                     android:textColor="@color/white"
+                    android:textColorHint="@color/white"
                     android:textSize="@dimen/xl_text_size" />
 
                 <ImageView
@@ -92,7 +89,7 @@
                 <TextView
                     android:id="@+id/tv_temp_min"
                     style="@style/smallText"
-                    android:text="Min Temp: 05:05 AM" />
+                    android:hint="Min Temp: 05:05 AM" />
 
                 <Space
                     android:layout_width="50dp"
@@ -101,7 +98,7 @@
                 <TextView
                     android:id="@+id/tv_temp_max"
                     style="@style/smallText"
-                    android:text="Max Temp: 05:05 PM" />
+                    android:hint="Max Temp: 05:05 PM" />
             </LinearLayout>
 
         </LinearLayout>
@@ -128,12 +125,12 @@
                     <TextView
                         android:id="@+id/tv_sunrise"
                         style="@style/itemType"
-                        android:text="Sunrise" />
+                        android:hint="Sunrise" />
 
                     <TextView
                         android:id="@+id/tv_sunrise_value"
                         style="@style/itemSubType"
-                        android:text="06:40 AM" />
+                        android:hint="06:40 AM" />
                 </LinearLayout>
 
                 <Space style="@style/mediumSpace" />
@@ -149,12 +146,12 @@
                     <TextView
                         android:id="@+id/tv_sunset"
                         style="@style/itemType"
-                        android:text="Sunset" />
+                        android:hint="Sunset" />
 
                     <TextView
                         android:id="@+id/tv_sunset_value"
                         style="@style/itemSubType"
-                        android:text="06:40 AM" />
+                        android:hint="06:40 AM" />
                 </LinearLayout>
 
                 <Space style="@style/mediumSpace" />
@@ -170,12 +167,12 @@
                     <TextView
                         android:id="@+id/tv_wind"
                         style="@style/itemType"
-                        android:text="Wind" />
+                        android:hint="Wind" />
 
                     <TextView
                         android:id="@+id/tv_wind_value"
                         style="@style/itemSubType"
-                        android:text="06:40 AM" />
+                        android:hint="06:40 AM" />
 
                 </LinearLayout>
             </LinearLayout>
@@ -197,12 +194,12 @@
                     <TextView
                         android:id="@+id/tv_pressure"
                         style="@style/itemType"
-                        android:text="Pressure" />
+                        android:hint="Pressure" />
 
                     <TextView
                         android:id="@+id/tv_pressure_value"
                         style="@style/itemSubType"
-                        android:text="06:40 AM" />
+                        android:hint="06:40 AM" />
                 </LinearLayout>
 
                 <Space style="@style/mediumSpace" />
@@ -218,12 +215,12 @@
                     <TextView
                         android:id="@+id/tv_humidity"
                         style="@style/itemType"
-                        android:text="Humidity" />
+                        android:hint="Humidity" />
 
                     <TextView
                         android:id="@+id/tv_humidity_value"
                         style="@style/itemSubType"
-                        android:text="06:40 AM" />
+                        android:hint="06:40 AM" />
                 </LinearLayout>
 
                 <Space style="@style/mediumSpace" />
@@ -238,14 +235,14 @@
 
                     <TextView
                         style="@style/itemType"
-                        android:text="Created By" />
+                        android:hint="Created By" />
 
                     <TextView
                         android:id="@+id/about"
                         style="@style/itemSubType"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Y Kalchev" />
+                        android:hint="Y Kalchev" />
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>

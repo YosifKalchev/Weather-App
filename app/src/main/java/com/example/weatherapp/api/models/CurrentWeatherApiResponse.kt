@@ -3,22 +3,17 @@ package com.example.weatherapp.api.models
 import com.google.gson.annotations.SerializedName
 
 data class CurrentWeatherApiResponse(
-    val base: String,
-    val clouds: Clouds,
-    val cod: Int,
 
-    @SerializedName("coord")
-    val coordinate: Coord,
-
+    val wind: Wind,
     @SerializedName("dt")
-    val timeOfDataCalc: Int,
+    val weatherRequestTime: Int,
+    @SerializedName("main")
+    val mainInfo: Main,
+    @SerializedName("name")
+    val locationName: String,
+    @SerializedName("sys")
+    val additionalInfo: Sys,
+    @SerializedName("weather")
+    val weatherVisuals: List<Weather>
 
-    val id: Int,
-    val main: Main,
-    val name: String,
-    val sys: Sys,
-    val timezone: Int,
-    val visibility: Int,
-    val weather: List<Weather>,
-    val wind: Wind
 )

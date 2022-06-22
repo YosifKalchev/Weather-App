@@ -5,4 +5,9 @@
     <string name="WEATHER_API_URL">https://api.openweathermap.org/</string>
     <string name="ICON_PREFIX">"https://openweathermap.org/img/wn/</string>
     <string name="ICON_POSTFIX">.png</string>
+    <string name="celsius">°C</string>
+    <string name="minTemp">Min Temp:</string>
+    <string name="maxTemp">Max Temp:</string>
+    <string name="mPerS">m/s</string>
+    <string name="hPa">hPa</string>
 </resources>
