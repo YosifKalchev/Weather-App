@@ -6,9 +6,6 @@
 [![AGP](https://img.shields.io/badge/AGP-4-blue?style=flat)](https://developer.android.com/studio/releases/gradle-plugin)
 [![Gradle](https://img.shields.io/badge/Gradle-7-blue?style=flat)](https://gradle.org)
 
-[![codebeat badge](https://codebeat.co/badges/e9f1a825-b5bd-4c7a-aadc-7c8d0cf59310)](https://codebeat.co/projects/github-com-igorwojda-android-showcase-main)
-[![CodeFactor](https://www.codefactor.io/repository/github/igorwojda/android-showcase/badge)](https://www.codefactor.io/repository/github/igorwojda/android-showcase)
-
 Showcase is a sample project that presents a modern approach to [Android](https://en.wikipedia.org/wiki/Android_(operating_system)) application development.
 
 The goal of the project is to create Android mobile application with the ability to display current weather conditions.
