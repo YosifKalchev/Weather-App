@@ -23,12 +23,12 @@ This project takes advantage of best practices, many popular libraries and tools
     * [Retrofit](https://square.github.io/retrofit/) - networking
     * [Jetpack](https://developer.android.com/jetpack)
         * [Navigation](https://developer.android.com/topic/libraries/architecture/navigation/) - in-app navigation
-        * [LiveData](https://developer.android.com/topic/libraries/architecture/livedata) - notify views about database change
+        * [LiveData](https://developer.android.com/topic/libraries/architecture/livedata) - notify views about database change (to be implemented)
         * [Lifecycle](https://developer.android.com/topic/libraries/architecture/lifecycle) - perform an action when lifecycle state changes
-        * [ViewModel](https://developer.android.com/topic/libraries/architecture/viewmodel) - store and manage UI-related data in a lifecycle conscious way
-        * [Room](https://developer.android.com/jetpack/androidx/releases/room) - store offline cache
+        * [ViewModel](https://developer.android.com/topic/libraries/architecture/viewmodel) - store and manage UI-related data in a lifecycle conscious way (to be implemented)
+        * [Room](https://developer.android.com/jetpack/androidx/releases/room) - store offline cache (to be implemented)
     * [Hilt](https://dagger.dev/hilt/) - dependency injection
-    * [Coil](https://github.com/coil-kt/coil) - image loading library
+    * [Picasso]([https://github.com/coil-kt/coil](https://square.github.io/picasso) - image loading library
 
 * Modern Architecture
     * Clean Architecture (at feature module level)
