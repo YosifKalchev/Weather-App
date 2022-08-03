@@ -2,9 +2,9 @@
 
 ![weather_app](https://user-images.githubusercontent.com/65896669/174929365-20af1d08-5144-4bca-978e-7d9e76888f02.jpg)
 
-[![Kotlin Version](https://img.shields.io/badge/Kotlin-1.5.20-blue.svg)](https://kotlinlang.org)
-[![AGP](https://img.shields.io/badge/AGP-4-blue?style=flat)](https://developer.android.com/studio/releases/gradle-plugin)
-[![Gradle](https://img.shields.io/badge/Gradle-7-blue?style=flat)](https://gradle.org)
+[![Kotlin Version](https://img.shields.io/badge/Kotlin-1.7.10-blue.svg)](https://kotlinlang.org)
+[![AGP](https://img.shields.io/badge/AGP-7.2.1-blue?style=flat)](https://developer.android.com/studio/releases/gradle-plugin)
+[![Gradle](https://img.shields.io/badge/Gradle-7.3.3-blue?style=flat)](https://gradle.org)
 
 Showcase is a sample project that presents a modern approach to [Android](https://en.wikipedia.org/wiki/Android_(operating_system)) application development.
 
