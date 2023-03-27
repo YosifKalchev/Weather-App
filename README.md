@@ -61,8 +61,8 @@ There are a few ways to open this project.
 
 ### Command-line + Android Studio
 
-1. Run `https://github.com/YosifKalchev/Weather-App.git` command to clone project
-2. Open `Android Studio` and select `File | Open...` from the menu. Select cloned directory and press `Open` button
+1. Run `https://github.com/YosifKalchev/Weather-App.git` command to clone project.
+2. Open `Android Studio` and select `File | Open...` from the menu. Select cloned directory and press `Open` button.
 
 ## Author
 
