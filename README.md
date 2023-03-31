@@ -70,7 +70,6 @@ There are a few ways to open this project.
 
 ## License
 ```
-MIT License
 
 Copyright (c) 2023 Yosif Kalchev
 
